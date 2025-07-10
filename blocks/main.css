@@ -1,0 +1,133 @@
+.content {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content__lead {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto 92px;
+}
+
+.content__lead-title {
+  font-family: "Inter Black", sans-serif;
+  font-size: 6rem;
+  line-height: 6.25rem;
+  text-align: center;
+  margin: 0 auto 48px;
+  max-width: 720px;
+}
+
+.content__lead-subtitle {
+  font-family: "Inter Regular", sans-serif;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  max-width: 720px;
+  text-align: center;
+  margin: 0 0 48px;
+}
+.content__lead-image {
+  width: 984px;
+  height: auto;
+  max-width: 100%;
+  display: block;
+}
+
+.content__description {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  max-width: 984px;
+  margin: 0 auto 92px;
+}
+
+.content__description-title {
+  font-family: "Inter Black", sans-serif;
+  font-size: 3.375rem;
+  line-height: 3.625rem;
+  margin: 0 0 40px;
+  max-width: 830px;
+}
+
+.content__description-quote {
+  font-family: "Inter Regular", sans-serif;
+  font-size: 1.5rem;
+  line-height: 2.125rem;
+  margin: 0 0 10px;
+  max-width: 738px;
+}
+
+.content__description-author {
+  font-family: "Inter Regular", sans-serif;
+  font-size: 1.5rem;
+  line-height: 2.125rem;
+  margin: 0 0 40px;
+  max-width: 738px;
+  text-align: end;
+}
+
+.content__description-text {
+  font-family: "Inter Regular", sans-serif;
+  font-size: 1rem;
+  line-height: 1.625rem;
+  max-width: 722px;
+  text-align: start;
+}
+
+@media screen and (max-width: 768px) {
+  .content__lead {
+    margin: 0 auto 90px;
+  }
+  .content__lead-title {
+    max-width: 530px;
+    font-size: 4.6875rem;
+    line-height: 4.9375rem;
+    margin: 0 auto 25px;
+  }
+  .content__lead-subtitle {
+    margin: 0 0 30px;
+  }
+  .content__description {
+    max-width: 720px;
+    margin: 0 24px 88px;
+  }
+  .content__description-title {
+    font-size: 2.8125rem;
+    line-height: 3.0625rem;
+    margin: 0 0 50px;
+  }
+  .content__description-quote {
+    margin: 0 0 26px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .content__lead {
+    margin: 0 auto 64px;
+  }
+  .content__lead-title {
+    max-width: 228px;
+    font-size: 2.5rem;
+    line-height: 2.75rem;
+    margin: 0 0 16px;
+  }
+  .content__lead-subtitle {
+    max-width: 288px;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    margin: 0 0 40px;
+  }
+  .content__description {
+    max-width: 288px;
+    margin: 0 16px 64px;
+  }
+  .content__description-title {
+    font-size: 2rem;
+    line-height: 2.1875rem;
+  }
+  .content__description-quote {
+    margin: 0 0 10px;
+  }
+}
