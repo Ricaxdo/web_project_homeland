@@ -30,7 +30,8 @@
   margin: 0 0 48px;
 }
 .content__lead-image {
-  width: 984px;
+  width: 100%;
+  max-width: 984px;
   height: auto;
   max-width: 100%;
   display: block;
@@ -42,6 +43,7 @@
   justify-content: flex-start;
   max-width: 984px;
   margin: 0 auto 92px;
+  width: 100%;
 }
 
 .content__description-title {
