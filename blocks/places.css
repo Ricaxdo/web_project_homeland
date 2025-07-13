@@ -1,0 +1,99 @@
+.content__places {
+  margin: 0 auto 90px;
+  max-width: 987px;
+  width: 100%;
+}
+
+.content__place-item {
+  display: grid;
+  grid-template-rows: minmax(0, 152px) minmax(0, 1fr);
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 48px 40px;
+  grid-template-areas:
+    "title authors"
+    "image description";
+}
+
+.content__title-item {
+  margin: 0;
+  width: 100%;
+  grid-area: title;
+  font-size: 4.5rem;
+  line-height: 4.75rem;
+  font-family: "Inter Black", sans-serif;
+}
+
+.content__authors-item {
+  grid-area: authors;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.authors__caption {
+  font-size: 0.75rem;
+  color: #aaaaaa;
+  letter-spacing: 0.15rem;
+  text-transform: uppercase;
+  margin: 0 0 8px;
+}
+
+.authors__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.author__name {
+  list-style-type: none;
+  font-size: 1.125rem;
+  line-height: 1.375rem;
+}
+
+.content__image-item {
+  grid-area: image;
+  width: 100%;
+  height: 152px;
+  background-size: cover;
+  background-position: center;
+}
+
+.content__card-item {
+  grid-area: image;
+  gap: 48px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card__image {
+  width: 100%;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.25);
+}
+
+.card__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 289px;
+  height: 48px;
+  background: linear-gradient(90deg, #0278fe 0%, #003a7b 99.98%);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+}
+
+.card__button-text {
+  font-family: "Inter SemiBold", sans-serif;
+  font-size: 1.125rem;
+}
+
+.content__description-item {
+  grid-area: description;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.description__text {
+  font-size: 1.125rem;
+  line-height: 1.8125rem;
+  margin: 0;
+}
