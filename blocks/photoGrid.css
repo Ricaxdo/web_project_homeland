@@ -1,0 +1,18 @@
+.content__grid {
+  max-width: 1184px;
+  width: 100%;
+  margin: 0 auto 92px;
+}
+
+.content__photo-grid {
+  display: grid;
+  grid-template: repeat(2, auto) / repeat(4, 1fr);
+  gap: 16px;
+}
+
+.content__grid-item {
+  max-width: 284px;
+  width: 100%;
+  height: auto;
+  display: block;
+}
