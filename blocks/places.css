@@ -70,7 +70,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 289px;
+  max-width: 289px;
+  width: 100%;
   height: 48px;
   background: linear-gradient(90deg, #0278fe 0%, #003a7b 99.98%);
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
@@ -81,6 +82,7 @@
 .card__button-text {
   font-family: "Inter SemiBold", sans-serif;
   font-size: 1.125rem;
+  text-align: center;
 }
 
 .content__description-item {
@@ -94,6 +96,13 @@
   font-size: 1.125rem;
   line-height: 1.8125rem;
   margin: 0;
+}
+.card__button-on {
+  display: none;
+}
+
+.card__button-off {
+  display: flex;
 }
 
 @media screen and (max-width: 768px) {
@@ -139,6 +148,7 @@
   .card__button-on {
     grid-area: button;
     margin: 0 auto;
+    display: flex;
   }
   .content__authors-item {
     max-width: 288px;
@@ -156,5 +166,9 @@
     margin: 0 auto;
     width: 100%;
     max-width: 288px;
+  }
+  .card__button-text {
+    font-size: 0.875rem;
+    text-align: center;
   }
 }
