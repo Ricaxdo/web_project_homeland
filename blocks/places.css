@@ -66,6 +66,10 @@
   background-position: center;
 }
 
+.card__image:hover {
+  opacity: 0.5;
+}
+
 .card__button {
   display: flex;
   align-items: center;
@@ -77,6 +81,14 @@
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
   border-radius: 4px;
   grid-area: image;
+}
+
+.card__button:hover {
+  background: linear-gradient(
+    90deg,
+    rgba(2, 120, 254, 0.25) 0%,
+    rgba(0, 58, 123, 0.25) 99.98%
+  );
 }
 
 .card__button-text {
@@ -103,6 +115,11 @@
 
 .card__button-off {
   display: flex;
+}
+
+.card__button-link {
+  text-decoration: none;
+  color: inherit;
 }
 
 @media screen and (max-width: 768px) {
