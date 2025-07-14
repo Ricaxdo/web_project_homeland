@@ -8,3 +8,9 @@
   src: url("../vendor/Inter-Black.woff2") format("woff2");
   font-weight: bold;
 }
+
+@font-face {
+  font-family: "Inter SemiBold";
+  src: url("../vendor/Inter-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+}
