@@ -2,11 +2,14 @@
   margin: 0 auto 90px;
   max-width: 987px;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
 }
 
 .content__place-item {
   display: grid;
-  grid-template-rows: minmax(0, 152px) minmax(0, 1fr);
+  grid-template-rows: minmax(0, 152px) minmax(0, 1fr) minmax(0, auto);
   grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
   gap: 48px 40px;
   grid-template-areas:
@@ -49,24 +52,18 @@
   line-height: 1.375rem;
 }
 
-.content__image-item {
-  grid-area: image;
-  width: 100%;
-  height: 152px;
-  background-size: cover;
-  background-position: center;
-}
-
 .content__card-item {
   grid-area: image;
-  gap: 48px;
   display: flex;
   flex-direction: column;
+  gap: 48px;
 }
 
 .card__image {
   width: 100%;
   box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.25);
+  background-size: cover;
+  background-position: center;
 }
 
 .card__button {
@@ -78,6 +75,7 @@
   background: linear-gradient(90deg, #0278fe 0%, #003a7b 99.98%);
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
   border-radius: 4px;
+  grid-area: image;
 }
 
 .card__button-text {
@@ -96,4 +94,67 @@
   font-size: 1.125rem;
   line-height: 1.8125rem;
   margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .content__places {
+    max-width: 720px;
+  }
+  .content__place-item {
+    grid-template-rows: minmax(0, 68px) minmax(0, 1fr);
+    column-gap: 28px;
+  }
+  .content__title-item {
+    font-size: 2.625rem;
+    line-height: 2.875rem;
+    display: flex;
+    align-items: flex-end;
+  }
+  .description__text {
+    font-size: 1rem;
+    line-height: 1.8125rem;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .content__places {
+    max-width: 320px;
+    gap: 50px;
+    margin: 0 auto 65px;
+  }
+  .content__place-item {
+    grid-template-columns: minmax(0, 320px);
+    grid-template-rows: repeat(5, minmax(0, auto));
+    grid-template-areas: "title" "authors" "image" "description" "button";
+    gap: 30px;
+  }
+  .card__image {
+    grid-area: image;
+    background-size: cover;
+  }
+  .card__button-off {
+    display: none;
+  }
+  .card__button-on {
+    grid-area: button;
+    margin: 0 auto;
+  }
+  .content__authors-item {
+    max-width: 288px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .content__title-item {
+    max-width: 288px;
+    width: 100%;
+    font-size: 2rem;
+    line-height: 2.1875rem;
+    margin: 0 auto;
+  }
+  .content__description-item {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 288px;
+  }
 }

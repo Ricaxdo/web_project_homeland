@@ -13,6 +13,33 @@
 .content__grid-item {
   max-width: 284px;
   width: 100%;
-  height: auto;
-  display: block;
+}
+
+@media screen and (max-width: 768px) {
+  .content__grid {
+    max-width: 720px;
+    width: 100%;
+    margin: 0 auto 88px;
+  }
+
+  .content__photo-grid {
+    grid-template: repeat(4, 1fr) / repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .content__grid-item {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .content__grid {
+    max-width: 288px;
+    width: 100%;
+    margin: 0 auto 62px;
+  }
+  .content__photo-grid {
+    grid-template: repeat(8, 1fr) / 1fr;
+    gap: 12px;
+  }
 }
